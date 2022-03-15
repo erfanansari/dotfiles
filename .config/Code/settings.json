@@ -39,7 +39,6 @@
     // Hiding Stuff
     "editor.snippetSuggestions": "inline",
     "editor.minimap.enabled": false,
-    "workbench.sideBar.location": "right",
     // "editor.lineNumbers": "relative",
     "workbench.startupEditor": "none",
     "editor.codeLens": false,
@@ -127,7 +126,6 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "workbench.activityBar.visible": false,
     "explorer.confirmDelete": false,
     "editor.linkedEditing": true,
     "editor.unicodeHighlight.allowedCharacters": {
@@ -140,6 +138,7 @@
         "browserslist",
         "Checkmarks",
         "commitlint",
+        "dotfiles",
         "Erfan",
         "erfanansari",
         "fullstacksjs",
@@ -170,9 +169,8 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "codechampion.victorySoundConfig": "Livin la vida locar",
-    "codechampion.failSoundConfig": "Pulp fiction say what again",
     "editor.lineNumbers": "off",
     "breadcrumbs.enabled": false,
-    "window.menuBarVisibility": "compact"
+    "window.menuBarVisibility": "toggle",
+    "workbench.sideBar.location": "right"
 }

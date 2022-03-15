@@ -372,11 +372,6 @@
         "when": "editorHasReferenceProvider"
     },
     {
-        "key": "g r",
-        "command": "references-view.findReferences",
-        "when": "editorHasReferenceProvider"
-    },
-    {
         "key": "shift+alt+f12",
         "command": "-references-view.findReferences",
         "when": "editorHasReferenceProvider"
@@ -553,5 +548,13 @@
         "key": "ctrl+j",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "workbench.view.extension.dockerView"
     }
 ]
