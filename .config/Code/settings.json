@@ -5,6 +5,7 @@
         "editor.suggestSelection": "recentlyUsed",
         "editor.suggest.showKeywords": false
     },
+    // "js/ts.implicitProjectConfig.checkJs": true,
     "editor.suggest.localityBonus": true,
     "editor.renderWhitespace": "none",
     "files.exclude": {
@@ -19,7 +20,7 @@
         "**/.build": true,
         "**/.gh-pages": true
     },
-    // Defualts
+    // Defaults
     "editor.fontLigatures": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -44,7 +45,11 @@
     "editor.codeLens": false,
     "editor.renderLineHighlight": "none",
     "editor.renderControlCharacters": false,
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
     "editor.occurrencesHighlight": false,
     "workbench.editor.enablePreview": false,
     "editor.hover.enabled": true,
@@ -53,12 +58,11 @@
     "editor.lightbulb.enabled": false,
     "editor.guides.indentation": false,
     "editor.hideCursorInOverviewRuler": true,
-    "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Fira Code, JetBrains Mono, MonoLisa, Dank Mono",
     "editor.fontSize": 14,
     "editor.lineHeight": 30,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": "Fira Code, JetBrains Mono, MonoLisa, Dank Mono",
     "editor.wordWrapColumn": 90,
     "terminal.integrated.lineHeight": 1.2,
     "editor.wordWrap": "on",
@@ -133,12 +137,14 @@
     },
     "cSpell.userWords": [
         "Ansari",
+        "axios",
         "BACKOFF",
         "bgcolor",
         "browserslist",
         "Checkmarks",
         "commitlint",
         "dotfiles",
+        "eansarimehr",
         "Erfan",
         "erfanansari",
         "fullstacksjs",
@@ -146,9 +152,14 @@
         "Informations",
         "Laravel",
         "nanobuffer",
+        "neofetch",
+        "Neovim",
         "Neue",
         "Nextjs",
+        "noopener",
+        "noreferrer",
         "Parens",
+        "Prefetch",
         "prettierignore",
         "prettierrc",
         "Roboto",
@@ -156,10 +167,13 @@
         "Segoe",
         "Signup",
         "Strapi",
-        "unslugify"
+        "subproblems",
+        "tailwindcss",
+        "unslugify",
+        "vercel",
+        "zustand"
     ],
     "typescript.tsserver.maxTsServerMemory": 12288,
-    "workbench.colorTheme": "GitHub Dark Dimmed",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": true,
@@ -169,8 +183,14 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.lineNumbers": "off",
+    "editor.lineNumbers": "on",
     "breadcrumbs.enabled": false,
-    "window.menuBarVisibility": "toggle",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.iconTheme": "material-icon-theme",
+    // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
+    "window.titleSeparator": " - ",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
+    "workbench.activityBar.visible": false,
+    "window.menuBarVisibility": "compact"
 }
