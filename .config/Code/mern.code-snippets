@@ -7,8 +7,20 @@
     // Placeholders with the same ids are connected.
     // Example:
     "Log to console": {
-        "prefix": "log",
-        "body": ["console.log($1);", "$2"],
+        "prefix": "logg",
+        "body": ["console.log($1)"],
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+        "description": "Log output to console"
+    },
+    "Log to varibale console": {
+        "prefix": "logv",
+        "body": ["console.log('$1', $1)$0"],
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+        "description": "Log output to console"
+    },
+    "Log into brackets": {
+        "prefix": "logb",
+        "body": ["console.log({$1})$0"],
         "scope": "javascript, javascriptreact, typescript, typescriptreact",
         "description": "Log output to console"
     },
@@ -17,12 +29,6 @@
         "body": ["import {${2}} from '$1'"],
         "scope": "javascript, javascriptreact, typescript, typescriptreact",
         "description": "React functional Component"
-    },
-    "Log to varibale console": {
-        "prefix": "logv",
-        "body": ["console.log('$1', $1);$0"],
-        "scope": "javascript, javascriptreact, typescript, typescriptreact",
-        "description": "Log output to console"
     },
     "Create a React FC Component": {
         "prefix": "fce", // Funtional Component at the End
