@@ -1,39 +1,39 @@
 [user]
 	email = dev.erfanansari@gmail.com
 	name = Erfan Ansari
-	[color]
-  ui = auto
-[alias]
-	gh = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[color]
+   	ui = auto
 [init]
 	defaultBranch = main
 [color "diff"]  # i still love these choices in 2022.
-  meta = yellow bold
-  commit = green bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
-  whitespace = red reverse
+        meta = yellow bold
+        commit = green bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse
 
-  newMoved = cyan dim
-  oldMoved = blue dim
-  newMovedAlternative = cyan italic
-  oldMovedAlternative = blue italic
+        newMoved = cyan dim
+        oldMoved = blue dim
+        newMovedAlternative = cyan italic
+        oldMovedAlternative = blue italic
 [color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
+        current = yellow reverse
+        local = yellow
+        remote = green
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
-
+        added = yellow
+        changed = green
+        untracked = cyan
 [color "diff-highlight"]  # mostly dead. only needed when using diff-so-fancy
-  oldNormal = red bold
-  oldHighlight = "red bold 52"
-  newNormal = "green bold"
-  newHighlight = "green bold 22"
-
-
+        oldNormal = red bold
+        oldHighlight = "red bold 52"
+        newNormal = "green bold"
+        newHighlight = "green bold 22"
 [fetch]
-  prune = true
+        prune = true
+[core]
+	editor = nvim
+	ignorecase = false
+[push]
+	default = simple
