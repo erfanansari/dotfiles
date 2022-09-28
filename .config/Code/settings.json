@@ -5,6 +5,14 @@
         "editor.suggestSelection": "recentlyUsed",
         "editor.suggest.showKeywords": false
     },
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "go.useLanguageServer": true,
+    "[go]":{
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "golang.go"
+    },
     // "js/ts.implicitProjectConfig.checkJs": true,
     "editor.suggest.localityBonus": true,
     "editor.renderWhitespace": "none",
@@ -27,7 +35,6 @@
     "editor.wordBasedSuggestions": false,
     "editor.smoothScrolling": true,
     "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": true,
     "files.trimTrailingWhitespace": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "files.autoSave": "onWindowChange",
@@ -39,8 +46,7 @@
     },
     // Hiding Stuff
     "editor.snippetSuggestions": "inline",
-    "editor.minimap.enabled": false,
-    // "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "relative",
     "workbench.startupEditor": "none",
     "editor.codeLens": false,
     "editor.renderLineHighlight": "none",
@@ -58,11 +64,12 @@
     "editor.lightbulb.enabled": false,
     "editor.guides.indentation": false,
     "editor.hideCursorInOverviewRuler": true,
-    "editor.fontFamily": "Fira Code, JetBrains Mono, MonoLisa, Dank Mono",
-    "editor.fontSize": 14,
+    // "editor.fontFamily": "Dank Mono",
+    "editor.fontFamily": "Dank Mono, FiraCode NF, JetBrains Mono, MonoLisa",
+    "editor.fontSize": 16,
     "editor.lineHeight": 30,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "Fira Code, JetBrains Mono, MonoLisa, Dank Mono",
+    "terminal.integrated.fontFamily": "Dank Mono, FiraCode NF, JetBrains Mono, MonoLisa",
     "editor.wordWrapColumn": 90,
     "terminal.integrated.lineHeight": 1.2,
     "editor.wordWrap": "on",
@@ -103,23 +110,64 @@
     "vim.statusBarColors.easymotioninputmode": "#007ACC",
     "vim.statusBarColors.surroundinputmode": "#007ACC",
     */
-    // "vim.easymotion": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
     // "vim.sneak": true,
-    // "vim.incsearch": true,
     // "vim.smartRelativeLine": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": false,
+    // "vim.leader": "\\",
+    "vim.leader": "<space>",
+     // make easy motion leader key press once
     "vim.insertModeKeyBindings": [
         {
-            "before": ["f", "j"],
+            "before": ["j", "f"],
             "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
+        },
         {
-            "before": ["<space>", "<space>"],
-            "commands": [":"]
+            "before": ["C-h"],
+            "after": ["<Left>"]
+        },
+        {
+            "before": ["C-l"],
+            "after": ["<Right>"]
+        },
+        {
+            "before": ["C-j"],
+            "after": ["<Down>"]
+        },
+        {
+            "before": ["C-k"],
+            "after": ["<Up>"]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        // {
+        //   "before": ["<leader>", "d"],
+        //   "after": ["d", "d"]
+        // },
+        // {
+        //   "before": [ "<tab>"],
+        //   "commands": ["workbench.action.nextEditor"]
+        // },
+        // {
+        //   "before": ["<S-tab>"],
+        //   "commands": ["workbench.action.previousEditor"]
+        // },
+      ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // {
+        //     "before": ["<leader>", "<leader>"],
+        //     "commands": [":"]
+        // },
+        {
+            "before": ["<leader>", "a"],
+            "after": ["^"]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "after": ["$"]
         }
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -141,14 +189,19 @@
         "BACKOFF",
         "bgcolor",
         "browserslist",
+        "Chatbubbles",
         "Checkmarks",
         "commitlint",
         "dotfiles",
         "eansarimehr",
+        "easymotion",
         "Erfan",
         "erfanansari",
         "fullstacksjs",
         "Hashnode",
+        "hlsearch",
+        "iconsax",
+        "incsearch",
         "Informations",
         "Laravel",
         "nanobuffer",
@@ -169,6 +222,7 @@
         "Strapi",
         "subproblems",
         "tailwindcss",
+        "tanstack",
         "unslugify",
         "vercel",
         "zustand"
@@ -179,18 +233,27 @@
         "*": true,
         "yaml": false,
         "plaintext": false,
-        "markdown": true
+        "markdown": true,
+        "go": true,
+        "typescript": true
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.lineNumbers": "on",
+    // "editor.lineNumbers": "on",
     "breadcrumbs.enabled": false,
-    "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.sideBar.location": "left",
     "workbench.iconTheme": "material-icon-theme",
     // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
     "window.titleSeparator": " - ",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
-    "workbench.activityBar.visible": false,
-    "window.menuBarVisibility": "compact"
+    "window.menuBarVisibility": "compact",
+    "[env]": {
+        "editor.defaultFormatter": "IronGeek.vscode-env"
+    },
+    "editor.minimap.enabled": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.colorTheme": "Night Owl",
+    "codechampion.victorySoundConfig": "Symphony n5",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.toolsManagement.autoUpdate": true
 }
