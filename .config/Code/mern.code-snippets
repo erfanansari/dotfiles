@@ -85,4 +85,9 @@
         "body": ["fontWeight: 'bold',\n"],
         "scope": "javascript, javascriptreact, typescript, typescriptreact",
     },
+    "Generate random background color":{
+        "prefix": "bgc",
+        "body":"bgcolor: `hsl(${Math.random() * 360}, 100%, 50%)`",
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    }
 }

@@ -41,14 +41,14 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
-        "addMissingImports": true,
+        // "source.addMissingImports": true,
+        "source.organizeImports": true,
         "source.fixAll.eslint": true // WIP
     },
     // Hiding Stuff
     "editor.snippetSuggestions": "inline",
     "editor.lineNumbers": "relative",
     "workbench.startupEditor": "none",
-    "editor.codeLens": false,
     "editor.renderLineHighlight": "none",
     "editor.renderControlCharacters": false,
     "editor.quickSuggestions": {
@@ -64,7 +64,6 @@
     "editor.lightbulb.enabled": false,
     "editor.guides.indentation": false,
     "editor.hideCursorInOverviewRuler": true,
-    // "editor.fontFamily": "Dank Mono",
     "editor.fontFamily": "Dank Mono, FiraCode NF, JetBrains Mono, MonoLisa",
     "editor.fontSize": 16,
     "editor.lineHeight": 30,
@@ -113,13 +112,11 @@
     "vim.easymotion": true,
     "vim.incsearch": true,
     // "vim.sneak": true,
-    // "vim.smartRelativeLine": true,
+    "vim.smartRelativeLine": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": false,
-    // "vim.leader": "\\",
     "vim.leader": "<space>",
-     // make easy motion leader key press once
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "f"],
@@ -144,10 +141,6 @@
     ],
     "vim.normalModeKeyBindings": [
         // {
-        //   "before": ["<leader>", "d"],
-        //   "after": ["d", "d"]
-        // },
-        // {
         //   "before": [ "<tab>"],
         //   "commands": ["workbench.action.nextEditor"]
         // },
@@ -157,10 +150,6 @@
         // },
       ],
     "vim.normalModeKeyBindingsNonRecursive": [
-        // {
-        //     "before": ["<leader>", "<leader>"],
-        //     "commands": [":"]
-        // },
         {
             "before": ["<leader>", "a"],
             "after": ["^"]
@@ -168,6 +157,22 @@
         {
             "before": ["<leader>", "e"],
             "after": ["$"]
+        },
+        {
+            "before": ["leader", "w"],
+            "after": ["leader", "leader", "w"],
+        },
+        {
+            "before": ["leader", "b"],
+            "after": ["leader", "leader", "b"],
+        },
+        {
+            "before": ["leader", "j"],
+            "after": ["leader", "leader", "j"],
+        },
+        {
+            "before": ["leader", "k"],
+            "after": ["leader", "leader", "k"],
         }
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -239,11 +244,10 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    // "editor.lineNumbers": "on",
     "breadcrumbs.enabled": false,
     "workbench.sideBar.location": "left",
     "workbench.iconTheme": "material-icon-theme",
-    // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}"
+    // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
     "window.titleSeparator": " - ",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
     "window.menuBarVisibility": "compact",
@@ -252,8 +256,10 @@
     },
     "editor.minimap.enabled": false,
     "editor.cursorSmoothCaretAnimation": true,
-    "workbench.colorTheme": "Night Owl",
+    "workbench.colorTheme": "Nightfox",
     "codechampion.victorySoundConfig": "Symphony n5",
     "diffEditor.ignoreTrimWhitespace": false,
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.labelFormat": "long"
 }

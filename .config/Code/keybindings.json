@@ -44,7 +44,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+m alt+w",
+        "key": "shift+cmd+m",
         "command": "editor.emmet.action.wrapWithAbbreviation",
         "when": "editorTextFocus"
     },
@@ -318,7 +318,7 @@
         "command": "editor.action.goToTypeDefinition"
     },
     {
-        "key": "cmd+j",
+        "key": "ctrl+tab",
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
         "when": "!activeEditorGroupEmpty"
     },
@@ -328,12 +328,12 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
-        "key": "cmd+j",
+        "key": "ctrl+tab",
         "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
     },
     {
-        "key": "shift+cmd+j",
+        "key": "ctrl+shift+tab",
         "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
         "when": "!activeEditorGroupEmpty"
     },
@@ -343,7 +343,7 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
-        "key": "shift+cmd+j",
+        "key": "ctrl+shift+tab",
         "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
     },
@@ -431,5 +431,33 @@
         "key": "ctrl+d",
         "command": "-deleteRight",
         "when": "textInputFocus"
-    }
+    },
+    {
+        "key": "alt+cmd+k",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+j",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "git.openChange"
+    },
+    {
+        "key": "cmd+k cmd+c",
+        "command": "git.openFile"
+    },
 ]
