@@ -30,10 +30,25 @@
         "scope": "javascript, javascriptreact, typescript, typescriptreact",
         "description": "React functional Component"
     },
-    "Create a React FC Component": {
-        "prefix": "fce", // Funtional Component at the End
+    "Create a React FC Component with regular function syntax": {
+        "prefix": "rfc",
         "body": [
             "function ${TM_FILENAME_BASE}() {",
+            "\treturn (",
+            "\t\t<>",
+            "\t\t\t<h1>${TM_FILENAME_BASE}$0</h1>",
+            "\t\t</>",
+            "\t)",
+            "}",
+            "\nexport default ${TM_FILENAME_BASE}\n"
+        ],
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+        "description": "Create a React Functional Component and export it at the end of the file"
+    },
+    "Create a React FC Component with arrow function syntax":{
+        "prefix": "afc",
+        "body": [
+            "const ${TM_FILENAME_BASE} = () => {",
             "\treturn (",
             "\t\t<>",
             "\t\t\t<h1>${TM_FILENAME_BASE}$0</h1>",
