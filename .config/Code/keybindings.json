@@ -164,11 +164,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+k cmd+h",
-        "command": "editor.debug.action.showDebugHover",
-        "when": "editorTextFocus && inDebugMode"
-    },
-    {
         "key": "ctrl+k ctrl+i",
         "command": "-editor.debug.action.showDebugHover",
         "when": "editorTextFocus && inDebugMode"
@@ -459,5 +454,19 @@
     {
         "key": "cmd+k cmd+c",
         "command": "git.openFile"
+    },
+    {
+        "key": "cmd+k cmd+v",
+        "command": "tailwindshades.generateColorPalette",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "-tailwindshades.generateColorPalette",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+g cmd+u",
+        "command": "git.refresh"
     },
 ]
