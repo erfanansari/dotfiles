@@ -1,5 +1,7 @@
 {
     // WIP
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.suggestSelection": "recentlyUsed",
@@ -117,11 +119,12 @@
     "vim.useCtrlKeys": true,
     "vim.hlsearch": false,
     "vim.leader": "<space>",
+    "vim.foldfix": true,
     "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "f"],
-            "after": ["<Esc>"]
-        },
+        // {
+        //     "before": ["j", "f"],
+        //     "after": ["<Esc>"]
+        // },
         {
             "before": ["C-h"],
             "after": ["<Left>"]
@@ -151,21 +154,21 @@
       ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>", "a"],
+            "before": ["H"],
             "after": ["^"]
         },
         {
-            "before": ["<leader>", "e"],
+            "before": ["L"],
             "after": ["$"]
         },
-        {
-            "before": ["leader", "w"],
-            "after": ["leader", "leader", "w"],
-        },
-        {
-            "before": ["leader", "b"],
-            "after": ["leader", "leader", "b"],
-        },
+        // {
+        //     "before": ["leader", "w"],
+        //     "after": ["leader", "leader", "w"],
+        // },
+        // {
+        //     "before": ["leader", "b"],
+        //     "after": ["leader", "leader", "b"],
+        // },
         {
             "before": ["leader", "j"],
             "after": ["leader", "leader", "j"],
@@ -175,6 +178,17 @@
             "after": ["leader", "leader", "k"],
         }
     ],
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        }
+    ],
+    "vim.camelCaseMotion.enable": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.editor.showTabs": false,
@@ -190,6 +204,7 @@
     },
     "cSpell.userWords": [
         "Ansari",
+        "Authed",
         "axios",
         "BACKOFF",
         "bgcolor",
@@ -213,6 +228,7 @@
         "neofetch",
         "Neovim",
         "Neue",
+        "NEXTAUTH",
         "Nextjs",
         "noopener",
         "noreferrer",
@@ -228,15 +244,17 @@
         "subproblems",
         "tailwindcss",
         "tanstack",
+        "testname",
+        "TRPC",
+        "typeahead",
         "unslugify",
         "vercel",
+        "webp",
         "zustand"
     ],
     "typescript.tsserver.maxTsServerMemory": 12288,
-    "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
+    "editor.inlineSuggest.enabled": true, "github.copilot.enable": { "*": true,
+    "yaml": false,
         "plaintext": false,
         "markdown": true,
         "go": true,
@@ -244,10 +262,8 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "breadcrumbs.enabled": false,
     "workbench.sideBar.location": "left",
-    "workbench.iconTheme": "material-icon-theme",
-    // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
+    "workbench.iconTheme": "vscode-icons",
     "window.titleSeparator": " - ",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
     "window.menuBarVisibility": "compact",
@@ -255,11 +271,11 @@
         "editor.defaultFormatter": "IronGeek.vscode-env"
     },
     "editor.minimap.enabled": false,
-    "editor.cursorSmoothCaretAnimation": true,
-    "workbench.colorTheme": "Nightfox",
-    "codechampion.victorySoundConfig": "Symphony n5",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.colorTheme": "Noctis Minimus",
     "diffEditor.ignoreTrimWhitespace": false,
     "go.toolsManagement.autoUpdate": true,
-    "workbench.activityBar.visible": false,
-    "workbench.editor.labelFormat": "long"
+    "workbench.editor.labelFormat": "default",
+    "editor.suggest.selectionMode": "always",
+    "workbench.activityBar.visible": false
 }
