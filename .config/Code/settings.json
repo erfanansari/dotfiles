@@ -1,5 +1,9 @@
 {
     // WIP
+    // verb inside/around object
+    // verb => change => c
+    // inside => i
+    // object => double quotation
     "typescript.suggest.paths": false,
     "javascript.suggest.paths": false,
     "[javascript]": {
@@ -277,5 +281,4 @@
     "go.toolsManagement.autoUpdate": true,
     "workbench.editor.labelFormat": "default",
     "editor.suggest.selectionMode": "always",
-    "workbench.activityBar.visible": false
 }
