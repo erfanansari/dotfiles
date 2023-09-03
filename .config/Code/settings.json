@@ -32,7 +32,6 @@
     },
     // Defaults
     "editor.fontLigatures": false,
-    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.wordBasedSuggestions": false,
     "editor.smoothScrolling": true,
@@ -49,7 +48,7 @@
     },
     // Hiding Stuff
     "editor.snippetSuggestions": "inline",
-    "editor.lineNumbers": "relative",
+    // "editor.lineNumbers": "relative",
     "workbench.startupEditor": "none",
     "editor.renderLineHighlight": "none",
     "editor.renderControlCharacters": false,
@@ -96,6 +95,7 @@
     "zenMode.hideActivityBar": false,
     "window.titleBarStyle": "custom",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.osx": "zsh",
     // Vim stuff
     /*
     "vim.statusBarColorControl": true,
@@ -113,6 +113,7 @@
     */
     "vim.easymotion": true,
     "vim.incsearch": true,
+    "vim.matchpairs": "(:),{:},[:]",
     // "vim.sneak": true,
     "vim.smartRelativeLine": true,
     "vim.useSystemClipboard": true,
@@ -204,6 +205,7 @@
     },
     "cSpell.userWords": [
         "Ansari",
+        "Arritech",
         "Authed",
         "axios",
         "BACKOFF",
@@ -216,7 +218,9 @@
         "eansarimehr",
         "easymotion",
         "Erfan",
+        "erfananm",
         "erfanansari",
+        "extralight",
         "fullstacksjs",
         "Hashnode",
         "hlsearch",
@@ -233,15 +237,18 @@
         "noopener",
         "noreferrer",
         "Parens",
+        "pocketbase",
         "Prefetch",
         "prettierignore",
         "prettierrc",
         "Roboto",
         "Scroller",
         "Segoe",
+        "sendgrid",
         "Signup",
         "Strapi",
         "subproblems",
+        "Swiper",
         "tailwindcss",
         "tanstack",
         "testname",
@@ -261,7 +268,6 @@
         "typescript": true
     },
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.sideBar.location": "left",
     "workbench.iconTheme": "vscode-icons",
     "window.titleSeparator": " - ",
@@ -272,9 +278,9 @@
     },
     "editor.minimap.enabled": false,
     "editor.cursorSmoothCaretAnimation": "on",
-    "workbench.colorTheme": "Noctis Minimus",
     "diffEditor.ignoreTrimWhitespace": false,
     "go.toolsManagement.autoUpdate": true,
     "workbench.editor.labelFormat": "default",
-    "editor.suggest.selectionMode": "always",
+    "editor.lineNumbers": "on",
+    "workbench.activityBar.visible": false
 }

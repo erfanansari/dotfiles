@@ -70,18 +70,14 @@
     // },
 
     // File Explorer Panel
-    // {
-    //     "key": "cmd+n",
-    //     "command": "explorer.newFile",
-    //     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-    // },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
     {
         "key": "cmd+k cmd+k",
         "command": "workbench.action.openGlobalKeybindings"
-    },
-    {
-        "key": "cmd+n",
-        "command": "extension.advancedNewFile",
     },
     {
         "key": "shift+cmd+n",
