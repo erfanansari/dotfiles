@@ -10,6 +10,7 @@
 - `ln -s -f ~/dev/dotfiles/.vimrc ~/.vimrc`
 - `ln -s -f ~/dev/dotfiles/.vim/ ~/vim`
 - `ln -s -f ~/dev/dotfiles/.zsh_history ~/.zsh_history`
+<!-- HISTFILE=~/dev/dotfiles/.zsh_history https://unix.stackexchange.com/a/111730/45383 -->
 - `ln -s -f ~/dev/dotfiles/.zprofile ~/.zprofile`
 - `ln -s -f ~/dev/dotfiles/.bashrc ~/.bashrc`
 - `ln -s -f ~/dev/dotfiles/.bash_profile ~/.bash_profile`
