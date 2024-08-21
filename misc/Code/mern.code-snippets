@@ -104,5 +104,10 @@
         "prefix": "bgc",
         "body":"bgcolor: `hsl(${Math.random() * 360}, 100%, 50%)`",
         "scope": "javascript, javascriptreact, typescript, typescriptreact",
-    }
+    },
+    "Import motion from framer-motion":{
+        "prefix": "imf",
+        "body":"import { motion } from 'framer-motion'",
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    },
 }

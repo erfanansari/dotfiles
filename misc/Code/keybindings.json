@@ -484,5 +484,35 @@
         "key": "shift+alt+f8",
         "command": "-editor.action.marker.prev",
         "when": "editorFocus"
+    },
+    {
+        "key": "cmd+escape",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+escape",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+cmd+9", // You can use a different key combination if you prefer
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "snippet": "\"$1\": \"${TM_SELECTED_TEXT/(\\\\s*)className\\\\s*=\\\\s*[\\'\"]([^\\'\"]+)[\\'\"](.*)/$1$2$3/}\",",
+          "overwriteBefore": 0,
+          "overwriteAfter": 0
+        },
+        "when": "editorTextFocus && editorLangId == 'javascriptreact'"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
     }
 ]
