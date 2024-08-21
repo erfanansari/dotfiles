@@ -6,6 +6,7 @@
 ### Linked files
 - `ln -s -f ~/dev/dotfiles/.zshrc ~/.zshrc`
 - `ln -s -f ~/dev/dotfiles/.gitconfig ~/.gitconfig`
+- `ln -s -f ~/dev/dotfiles/.gitattributes ~/.gitattributes`
 - `ln -s -f ~/dev/dotfiles/.vimrc ~/.vimrc`
 - `ln -s -f ~/dev/dotfiles/.vim/ ~/vim`
 - `ln -s -f ~/dev/dotfiles/.zsh_history ~/.zsh_history`
