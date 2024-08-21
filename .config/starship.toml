@@ -46,7 +46,6 @@ always_show_remote=false
 
 [golang]
 symbol = " "
-format = 'via [🏎💨 $version](bold cyan) '
 
 [guix_shell]
 symbol = " "
