@@ -1,5 +1,5 @@
 # The Fuck settings file
-#
+# Hi
 # The rules are defined as in the example bellow:
 #
 # rules = ['cd_parent', 'git_push', 'python_command', 'sudo']
