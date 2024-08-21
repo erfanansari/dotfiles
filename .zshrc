@@ -13,8 +13,8 @@ ZSH_THEME="robbyrussell"
 # ZSH_THEME="terminalparty"
 # ZSH_THEME="cloud"
 # ZSH_THEME="af-magic"
-# ZSH_THEME="norm"
 # ZSH_THEME="wezm+"
+# ZSH_THEME="norm"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

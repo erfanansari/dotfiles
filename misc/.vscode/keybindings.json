@@ -496,7 +496,7 @@
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     },
     {
-        "key": "shift+cmd+9", // You can use a different key combination if you prefer
+        "key": "shift+cmd+9", // You can use a different key combination if it is preferred
         "command": "editor.action.insertSnippet",
         "args": {
           "snippet": "\"$1\": \"${TM_SELECTED_TEXT/(\\\\s*)className\\\\s*=\\\\s*[\\'\"]([^\\'\"]+)[\\'\"](.*)/$1$2$3/}\",",
