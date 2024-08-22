@@ -23,8 +23,10 @@ symbol = " "
 read_only = " 󰌾"
 
 [docker_context]
+format = '[$symbol$context]($style) '
 symbol = " "
-only_with_files=true
+disabled = true
+# only_with_files=true
 # detect_files=['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile', 'app.Dockerfile', 'dev.Dockerfile']
 
 [elixir]
