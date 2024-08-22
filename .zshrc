@@ -79,7 +79,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git zsh-wakatime macos zsh-autosuggestions colored-man-pages)
-plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages)
+# Note that zsh-syntax-highlighting should be the last
+plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting)
 
 # User configuration
 
@@ -127,7 +128,7 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 alias pbc="pbcopy"
 alias pbp="pbpaste"
 alias crm="cd ~/dev/pragma/crm-fe/apps/crm"
-
+alias z=j
 minify() {
    ffmpeg -i $1 -vcodec libx265 -crf 28 $2
 }

@@ -70,7 +70,7 @@
     "editor.hideCursorInOverviewRuler": true,
     // "editor.fontFamily": "Dank Mono, FiraCode NF, JetBrains Mono, MonoLisa",
     "editor.fontFamily": "Dank Mono",
-    "editor.fontSize": 15,
+    "editor.fontSize": 15.5,
     "editor.lineHeight": 30,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontFamily": "Dank Mono, FiraCode NF, JetBrains Mono, MonoLisa",
