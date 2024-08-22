@@ -105,8 +105,6 @@ plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-sho
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias count='cloc --fullpath --not-match-d="(node_modules|App/ios|App/android|.next)" --not-match-f="(yarn\.lock|package\-lock\.json)"'
 alias dsr='du -ch -d 1 . | sort -h' # display the disk usage of directories in the current directory in a human-readable format and sorted by size
 alias zshconfig="nvim ~/.zshrc"
@@ -123,12 +121,9 @@ alias reload="source ~/.zshrc"
 # make help commands highlighted with bat
 alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
 alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
-# alias c="xclip"
-# alias v="xclip -o"
 alias pbc="pbcopy"
 alias pbp="pbpaste"
-alias crm="cd ~/dev/pragma/crm-fe/apps/crm"
-alias z=j
+
 minify() {
    ffmpeg -i $1 -vcodec libx265 -crf 28 $2
 }
@@ -219,6 +214,7 @@ export ZSH_WAKATIME_PROJECT_DETECTION=false
 eval $(thefuck --alias)
 
 # set -o vi
+# set -o emacs
 
 
 
