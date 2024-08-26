@@ -180,11 +180,11 @@ symbol = " "
 
 
 [git_status]
-conflicted = '~(${count})'
+up_to_date = '✓'
 ahead = '⇡${count}'
 behind = '⇣${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-up_to_date = '✓'
+conflicted = '~\(${count}\)'
 untracked = '[!\(${count}\)](#a0d9ef)'
 stashed = '[*\(${count}\)](#be90d4)'
 modified = '[+\(${count}\)](#ffbf00)'
