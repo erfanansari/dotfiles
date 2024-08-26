@@ -26,3 +26,4 @@
 - `ln -s -f ~/dev/dotfiles/misc/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json`
 - `ln -s -f ~/dev/dotfiles/misc/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json`
 - `ln -s -f ~/dev/dotfiles/misc/.vscode/mern.code-snippets ~/Library/Application\ Support/Code/User/snippets/mern.code-snippets`
+- `ln -s -f ~/dev/dotfiles/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf`
