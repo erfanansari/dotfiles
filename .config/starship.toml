@@ -189,8 +189,8 @@ untracked = '[!\(${count}\)](#a0d9ef)'
 stashed = '[*\(${count}\)](#be90d4)'
 modified = '[+\(${count}\)](#ffbf00)'
 staged = '[++\($count\)](green)'
-renamed = '[->\(${count}\)]'
-deleted = '[x\(${count}\)]'
+renamed = '[->\(${count}\)](orange)'
+deleted = '[x\(${count}\)](red)'
 
 
 # [time]
