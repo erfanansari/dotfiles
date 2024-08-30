@@ -159,7 +159,7 @@ dcus() {
    networksetup -disconnectpppoeservice us
 }
 
-gccd() {
+gcj() {
   git clone "$1" && cd "$(basename "$1" .git)"
 }
 
@@ -203,7 +203,7 @@ fstash() {
 
 
 # function sesh-sessions() {
-function ss() {
+function sl() {
   {
     exec </dev/tty
     exec <&1

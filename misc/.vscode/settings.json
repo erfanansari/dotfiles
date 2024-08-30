@@ -209,6 +209,8 @@
     "editor.unicodeHighlight.allowedCharacters": {
       "’": true
     },
+    "cSpell.customDictionaries": {},
+    "cSpell.language": "en-GB",
     "cSpell.userWords": [
       "Ansari",
       "APIKEY",
@@ -321,7 +323,6 @@
     },
     "editor.accessibilitySupport": "off",
     "workbench.activityBar.location": "hidden",
-    "cSpell.customDictionaries": {},
     "workbench.editor.customLabels.patterns": {
       "/**": "${dirname}/${filename}.${extname}"
     },
