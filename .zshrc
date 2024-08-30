@@ -209,6 +209,7 @@ export PATH=$PATH:/usr/local/mongodb/bin
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export ZSH_WAKATIME_PROJECT_DETECTION=false
+export EDITOR='nvim'
 
 
 
