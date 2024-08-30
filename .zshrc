@@ -229,10 +229,6 @@ export ZSH_WAKATIME_PROJECT_DETECTION=false
 export EDITOR='nvim'
 
 
-bind-key x kill-pane # skip "kill-pane 1? (y/n)" prompt
-# set -g detach-on-destroy off  # don't exit from tmux when closing a session
-
-
 
 eval $(thefuck --alias)
 
