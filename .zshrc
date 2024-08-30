@@ -202,6 +202,23 @@ fstash() {
 }
 
 
+# function sesh-sessions() {
+function ss() {
+  {
+    exec </dev/tty
+    exec <&1
+    local session
+    session=$(sesh list -t -c | fzf --height 40% --reverse --border-label ' sesh ' --border --prompt '⚡  ')
+    [[ -z "$session" ]] && return
+    sesh connect $session
+  }
+}
+
+zle     -N             sesh-sessions
+bindkey -M emacs '\es' sesh-sessions
+bindkey -M vicmd '\es' sesh-sessions
+bindkey -M viins '\es' sesh-sessions
+
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 # export PATH=$PATH:$GOBIN
@@ -210,6 +227,10 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export ZSH_WAKATIME_PROJECT_DETECTION=false
 export EDITOR='nvim'
+
+
+bind-key x kill-pane # skip "kill-pane 1? (y/n)" prompt
+# set -g detach-on-destroy off  # don't exit from tmux when closing a session
 
 
 
