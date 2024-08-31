@@ -126,9 +126,34 @@ alias pbp="pbpaste"
 alias c="clear"
 
 
-sl() {
-    tmux attach-session -t $(tmux ls | awk -F: '{print $1}' | fzf --height 40% --reverse)
+function sl() {
+  {
+    exec </dev/tty
+    exec <&1
+    local session
+    local current_session
+
+    # Check if we are currently in a tmux session
+    if [ -n "$TMUX" ]; then
+      # We are inside a tmux session
+      current_session=$(tmux display-message -p '#S')
+      # List all sessions except the current one
+      session=$(tmux ls | awk -F: -v current="$current_session" '$1 != current {print $1}' | fzf --height 40% --reverse)
+    else
+      # We are not inside a tmux session
+      session=$(tmux ls | awk -F: '{print $1}' | fzf --height 40% --reverse)
+    fi
+
+    # Check if a session was selected
+    if [ -z "$session" ]; then
+      return
+    fi
+
+    # Attach to the selected session
+    tmux a -t "$session"
+  }
 }
+
 
 
 
