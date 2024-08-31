@@ -1,6 +1,8 @@
 # Move the directory to the second line
 # format = '$all$directory$character'
 
+command_timeout=2000
+
 [aws]
 symbol = "  "
 
