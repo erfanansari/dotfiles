@@ -80,7 +80,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git zsh-wakatime macos zsh-autosuggestions colored-man-pages)
 # Note that zsh-syntax-highlighting should be the last
-plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting)
+plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting web-search)
 
 # User configuration
 
