@@ -20,7 +20,7 @@ config.colors = {
 }
 
 config.font = wezterm.font("FiraCode Nerd Font Mono")
-config.font_size = 16
+config.font_size = 15.5
 
 config.enable_tab_bar = false
 
