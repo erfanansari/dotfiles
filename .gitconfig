@@ -36,6 +36,7 @@
 	editor = nvim
 	ignorecase = false
 [push]
-	default = simple
+  default = simple
+  autoSetupRemote = true
 [includeIf "gitdir:~/dev/pragma/"]
   path = .gitconfig-pragma
