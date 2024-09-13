@@ -132,8 +132,8 @@ tmux-session-switcher() {
 
   # List all sessions, exclude the current one (if any), and pass them to fzf with tmux-popup-like options
   local session=$(tmux list-sessions | sed -E 's/:.*$//' | grep -v "^$current_session\$" | \
-    fzf --reverse --border \
-    --height=40% --min-height=10 --layout=reverse --border=rounded \
+    fzf --reverse --border --height=40% --min-height=10 \
+    --layout=reverse --border=rounded \
     --color='border:white' --margin=5% --tmux=55%)
 
   # If a session is selected
