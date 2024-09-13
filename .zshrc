@@ -124,7 +124,7 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 alias pbc="pbcopy"
 alias pbp="pbpaste"
 alias c="clear"
-alias tss="tmux-session-switcher"
+alias sf="tmux-session-switcher"
 
 tmux-session-switcher() {
   # Get the current session (if inside tmux)
@@ -134,7 +134,7 @@ tmux-session-switcher() {
   local session=$(tmux list-sessions | sed -E 's/:.*$//' | grep -v "^$current_session\$" | \
     fzf --reverse --border \
     --height=40% --min-height=10 --layout=reverse --border=rounded \
-    --color=dark --margin=5%)
+    --color='border:white' --margin=5% --tmux=55%)
 
   # If a session is selected
   if [[ -n "$session" ]]; then
