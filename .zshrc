@@ -130,8 +130,11 @@ tmux-session-switcher() {
   # Get the current session (if inside tmux)
   local current_session=$(tmux display-message -p '#S' 2>/dev/null)
 
-  # List all sessions, exclude the current one (if any), and pass them to fzf
-  local session=$(tmux list-sessions | sed -E 's/:.*$//' | grep -v "^$current_session\$" | fzf --reverse)
+  # List all sessions, exclude the current one (if any), and pass them to fzf with tmux-popup-like options
+  local session=$(tmux list-sessions | sed -E 's/:.*$//' | grep -v "^$current_session\$" | \
+    fzf --reverse --border \
+    --height=40% --min-height=10 --layout=reverse --border=rounded \
+    --color=dark --margin=5%)
 
   # If a session is selected
   if [[ -n "$session" ]]; then
@@ -143,6 +146,7 @@ tmux-session-switcher() {
     fi
   fi
 }
+
 #   display-popup -E "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(tmux display-message -p '#S')\$\" | fzf --reverse | xargs tmux switch-client -t"
 
 # function sl() {
