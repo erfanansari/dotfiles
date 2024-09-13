@@ -124,7 +124,6 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 alias pbc="pbcopy"
 alias pbp="pbpaste"
 alias c="clear"
-alias eza="eza --icons=always"
 
 
 function sl() {
