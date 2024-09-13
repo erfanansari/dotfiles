@@ -124,36 +124,55 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 alias pbc="pbcopy"
 alias pbp="pbpaste"
 alias c="clear"
+alias tss="tmux-session-switcher"
 
+tmux-session-switcher() {
+  # Get the current session (if inside tmux)
+  local current_session=$(tmux display-message -p '#S' 2>/dev/null)
 
-function sl() {
-  {
-    exec </dev/tty
-    exec <&1
-    local session
-    local current_session
+  # List all sessions, exclude the current one (if any), and pass them to fzf
+  local session=$(tmux list-sessions | sed -E 's/:.*$//' | grep -v "^$current_session\$" | fzf --reverse)
 
-    # Check if we are currently in a tmux session
-    if [ -n "$TMUX" ]; then
-      # We are inside a tmux session
-      current_session=$(tmux display-message -p '#S')
-      # List all sessions except the current one
-      session=$(tmux ls | awk -F: -v current="$current_session" '$1 != current {print $1}' | fzf --height 40% --reverse)
+  # If a session is selected
+  if [[ -n "$session" ]]; then
+    # Unset $TMUX to allow switching between sessions, and then attach
+    if [[ -n "$TMUX" ]]; then
+      tmux switch-client -t "$session"
     else
-      # We are not inside a tmux session
-      session=$(tmux ls | awk -F: '{print $1}' | fzf --height 40% --reverse)
+      tmux attach-session -t "$session"
     fi
-
-    # Check if a session was selected
-    if [ -z "$session" ]; then
-      return
-    fi
-
-    # Attach to the selected session
-    tmux a -t "$session"
-  }
+  fi
 }
+#   display-popup -E "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(tmux display-message -p '#S')\$\" | fzf --reverse | xargs tmux switch-client -t"
 
+# function sl() {
+#   {
+#     exec </dev/tty
+#     exec <&1
+#     local session
+#     local current_session
+#
+#     # Check if we are currently in a tmux session
+#     if [ -n "$TMUX" ]; then
+#       # We are inside a tmux session
+#       current_session=$(tmux display-message -p '#S')
+#       # List all sessions except the current one
+#       session=$(tmux ls | awk -F: -v current="$current_session" '$1 != current {print $1}' | fzf --height 40% --reverse)
+#     else
+#       # We are not inside a tmux session
+#       session=$(tmux ls | awk -F: '{print $1}' | fzf --height 40% --reverse)
+#     fi
+#
+#     # Check if a session was selected
+#     if [ -z "$session" ]; then
+#       return
+#     fi
+#
+#     # Attach to the selected session
+#     tmux a -t "$session"
+#   }
+# }
+#
 
 
 
