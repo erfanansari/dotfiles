@@ -9,7 +9,6 @@
   },
   "javascript.suggest.completeFunctionCalls": true,
   "typescript.suggest.completeFunctionCalls": true,
-  "go.useLanguageServer": true,
   "[go]": {
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
@@ -308,7 +307,6 @@
   "workbench.iconTheme": "vscode-icons",
   "window.titleSeparator": " - ",
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
-  "window.menuBarVisibility": "compact",
   "[env]": {
     "editor.defaultFormatter": "IronGeek.vscode-env"
   },
@@ -329,6 +327,5 @@
   "workbench.editor.customLabels.patterns": {
     "/**": "${dirname}/${filename}.${extname}"
   },
-  "prisma.showPrismaDataPlatformNotification": false,
   "github.copilot.editor.enableAutoCompletions": true
 }
