@@ -220,6 +220,7 @@
     "BACKOFF",
     "bgcolor",
     "browserslist",
+    "camelcase",
     "Chatbubbles",
     "Checkmarks",
     "clonedeep",
@@ -327,5 +328,6 @@
   "workbench.editor.customLabels.patterns": {
     "/**": "${dirname}/${filename}.${extname}"
   },
-  "github.copilot.editor.enableAutoCompletions": true
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.largeFileOptimizations": false
 }
