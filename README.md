@@ -27,5 +27,6 @@
 - `ln -s -f ~/dev/dotfiles/misc/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json`
 - `ln -s -f ~/dev/dotfiles/misc/.vscode/mern.code-snippets ~/Library/Application\ Support/Code/User/snippets/mern.code-snippets`
 - `ln -s -f ~/dev/dotfiles/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf`
-- `ln -s -f ~/dev/dotfiles/.config/tmux/plugins/tmux/custom ~/.config/tmux/plugins/tmux/custom`
+- `ln -s -f ~/dev/dotfiles/.config/tmux/plugins/tmux/custom/spotify-info ~/.config/tmux/plugins/tmux/custom/spotify-info`
+- `ln -s -f ~/dev/dotfiles/.config/tmux/plugins/tmux/custom/spotify.sh ~/.config/tmux/plugins/tmux/custom/spotify.sh`
 - `ln -s -f ~/dev/dotfiles/.wezterm.lua ~/.wezterm.lua`
