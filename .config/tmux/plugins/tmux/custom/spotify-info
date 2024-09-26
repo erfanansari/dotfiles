@@ -15,10 +15,10 @@ tell application "Spotify"
                 set result to "~ " & track_name
             end if
         else
-            set result to "Paused"
+            set result to "paused"
         end if
     else
-        set result to "Closed"
+        set result to "closed"
     end if
 end tell
 
