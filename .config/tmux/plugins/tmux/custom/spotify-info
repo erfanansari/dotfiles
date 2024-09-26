@@ -18,7 +18,7 @@ tell application "Spotify"
             set result to "Paused"
         end if
     else
-        set result to "Not running"
+        set result to "Closed"
     end if
 end tell
 
