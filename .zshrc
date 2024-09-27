@@ -4,7 +4,18 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Set the history file to a specific location
 HISTFILE=~/dev/dotfiles/.zsh_history
+# Set the maximum number of commands to store in the history file
+HISTSIZE=500000
+# Save the last 500,000 commands to the history file when you exit ZSH
+SAVEHIST=500000
+# Append new commands to the end of the history file instead of overwriting existing commands
+setopt appendhistory
+# Only append new commands to the history file if they are different from the previous command
+setopt INC_APPEND_HISTORY
+# Enable history sharing between different ZSH shells
+setopt SHARE_HISTORY
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
