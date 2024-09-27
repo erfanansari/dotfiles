@@ -66,11 +66,11 @@ setopt BANG_HIST
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 14
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -113,7 +113,7 @@ setopt BANG_HIST
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git zsh-wakatime macos zsh-autosuggestions colored-man-pages)
 # Note that zsh-syntax-highlighting should be the last
-plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting web-search)
+plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting eza macos web-search)
 
 # User configuration
 
