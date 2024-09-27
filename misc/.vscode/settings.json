@@ -30,7 +30,8 @@
     "**/bower_components": true,
     "**/build": true,
     "**/coverage": true,
-    "**/dist": true
+    "**/dist": true,
+    "**/jest-report-run.html": true
   },
   // Defaults
   "editor.fontLigatures": false,
