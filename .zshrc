@@ -158,6 +158,8 @@ alias pbc="pbcopy"
 alias pbp="pbpaste"
 alias c="clear"
 alias sf="tmux-session-switcher"
+alias ip="curl -S https://ipconfig.io/json | jq"
+
 
 tmux-session-switcher() {
   # Get the current session (if inside tmux)
