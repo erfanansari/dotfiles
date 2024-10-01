@@ -330,5 +330,5 @@
     "/**": "${dirname}/${filename}.${extname}"
   },
   "github.copilot.editor.enableAutoCompletions": true,
-  "editor.largeFileOptimizations": false
+  "editor.largeFileOptimizations": false,
 }
