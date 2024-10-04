@@ -113,7 +113,7 @@ zstyle ':omz:update' frequency 14
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git zsh-wakatime macos zsh-autosuggestions colored-man-pages)
 # Note that zsh-syntax-highlighting should be the last
-plugins=(git zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting eza macos web-search)
+plugins=(git forgit zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting eza macos web-search)
 
 # User configuration
 
