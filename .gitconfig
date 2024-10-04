@@ -1,6 +1,8 @@
 [user]
 	email = dev.erfanansari@gmail.com
 	name = Erfan Ansari
+[github]
+  user = erfanansari
 [color]
    	ui = auto
 [init]
