@@ -160,6 +160,11 @@ alias c="clear"
 alias sf="tmux-session-switcher"
 alias cip="curl -S https://ipconfig.io/json | jq"
 
+# Overwrite forgit plugin default aliases
+forgit_checkout_branch="gcbi"
+forgit_diff="gdi"
+
+
 
 tmux-session-switcher() {
   # Get the current session (if inside tmux)
