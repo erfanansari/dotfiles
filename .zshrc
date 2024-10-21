@@ -151,7 +151,7 @@ alias gd="git diff --name-only --relative --diff-filter=d | xargs bat --diff"
 alias glogf="git log --oneline --graph --color=always | nl |
     fzf --ansi --track --no-sort --layout=reverse-list"
 alias reload="source ~/.zshrc"
-# make help commands highlighted with bat
+# Make help commands highlighted with bat
 alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
 alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 alias pbc="pbcopy"
@@ -162,8 +162,9 @@ alias cip="curl -S https://ipconfig.io/json | jq"
 
 # Overwrite forgit plugin default aliases
 forgit_checkout_branch="gcbi"
+forgit_checkout_commit="gcoi"
+forgit_rebase=grbi
 forgit_diff="gdi"
-
 
 
 tmux-session-switcher() {

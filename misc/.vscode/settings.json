@@ -196,7 +196,7 @@
   ],
   "vim.camelCaseMotion.enable": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  // "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "workbench.editor.showTabs": "single",
   "git.autofetch": true,
@@ -222,10 +222,12 @@
     "bgcolor",
     "browserslist",
     "camelcase",
+    "CEST",
     "Chatbubbles",
     "Checkmarks",
     "clonedeep",
     "Codegen",
+    "colored",
     "commitlint",
     "directus",
     "dotfiles",
@@ -284,6 +286,7 @@
     "tanstack",
     "testid",
     "testname",
+    "toastify",
     "TRPC",
     "trustpilot",
     "typeahead",
@@ -332,4 +335,7 @@
   },
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.largeFileOptimizations": false,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
 }
