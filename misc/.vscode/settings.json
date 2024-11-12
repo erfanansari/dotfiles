@@ -195,8 +195,8 @@
     }
   ],
   "vim.camelCaseMotion.enable": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "workbench.editor.showTabs": "single",
   "git.autofetch": true,
@@ -338,4 +338,5 @@
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  "workbench.colorTheme": "GitHub Dark",
 }

@@ -140,7 +140,8 @@ plugins=(git forgit zsh-wakatime zsh-autosuggestions colored-man-pages autojump 
 # Example aliases
 alias count='cloc --fullpath --not-match-d="(node_modules|App/ios|App/android|.next)" --not-match-f="(yarn\.lock|package\-lock\.json)"'
 alias dus='du -ch -d 1 . | sort -h' # display the disk usage of directories in the current directory in a human-readable format and sorted by size
-alias zshconfig="nvim ~/.zshrc"
+alias zshconf="nvim ~/.zshrc"
+alias sshconf="nvim ~/.ssh/config"
 alias gvv="git branch -vv"
 alias gfb="git branch | fzf --preview 'git show --color=always {-1}' \
                  --bind 'enter:become(git checkout {-1})' \
