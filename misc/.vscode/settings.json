@@ -31,6 +31,7 @@
     "**/build": true,
     "**/coverage": true,
     "**/dist": true,
+    "**/dist/**": true,
     "**/jest-report-run.html": true
   },
   // Defaults
@@ -332,11 +333,19 @@
   "workbench.activityBar.location": "hidden",
   "workbench.editor.customLabels.patterns": {
     "/**": "${dirname}/${filename}.${extname}"
+    // "/**": "${dirname(3)}/${filename}.${extname}"
+    // "/**": "${dirname}/${filename}"
+    // "/**": "${dirname}/${filename}"
+    // "**/routes/**/*[]/+page*": "${dirname(1)}/${dirname(0)}",
+    //     "**/routes/**/*[]/+page.server*": "${dirname(1)}/${dirname(0)} server",
+    //     "**/routes/**/*[]/+*": "${dirname(1)}/${dirname(0)} ${filename}",
+    //     "**/routes/**/+page*": "${dirname(0)}",
+    //     "**/routes/**/+page.server*": "${dirname(0)} server",
+    //     "**/routes/**/+*": "${dirname(0)} ${filename}"
   },
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.largeFileOptimizations": false,
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "workbench.colorTheme": "GitHub Dark",
 }
