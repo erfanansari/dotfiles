@@ -202,16 +202,16 @@
   "workbench.editor.showTabs": "single",
   "git.autofetch": true,
   "explorer.confirmDragAndDrop": false,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.html-language-features"
+  // },
   "explorer.confirmDelete": false,
   "editor.linkedEditing": true,
   "editor.unicodeHighlight.allowedCharacters": {
     "’": true
   },
   "cSpell.customDictionaries": {},
-  "cSpell.language": "en-GB",
+  "cSpell.language": "en-US",
   "cSpell.userWords": [
     "Ansari",
     "APIKEY",
