@@ -1,0 +1,341 @@
+{
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggestSelection": "recentlyUsed",
+        "editor.suggest.showKeywords": false
+    },
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "golang.go"
+    },
+    "editor.suggest.localityBonus": true,
+    "editor.renderWhitespace": "none",
+    "files.exclude": {},
+    "search.exclude": {
+        "**/tsconfig.tsbuildinfo": true,
+        "**/pnpm-lock.yaml": true,
+        "**/.build": true,
+        "**/.gh-pages": true,
+        "**/.next": true,
+        "**/bower_components": true,
+        "**/build": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/dist/**": true,
+        "**/jest-report-run.html": true
+    },
+    "editor.fontLigatures": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordBasedSuggestions": "off",
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "phase",
+    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.autoSave": "onWindowChange",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.addMissingImports": "explicit",
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.snippetSuggestions": "inline",
+    "workbench.startupEditor": "none",
+    "editor.renderLineHighlight": "none",
+    "editor.renderControlCharacters": false,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "editor.occurrencesHighlight": "off",
+    "workbench.editor.enablePreview": false,
+    "editor.hover.enabled": true,
+    "editor.matchBrackets": "never",
+    "workbench.tips.enabled": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.guides.indentation": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.fontFamily": "DankMono-Italic , FiraCode NF, JetBrains Mono, MonoLisa",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 30,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "Dank Mono, FiraCode NF, JetBrains Mono, MonoLisa",
+    "editor.wordWrapColumn": 90,
+    "terminal.integrated.lineHeight": 1.2,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "search.useIgnoreFiles": false,
+    "prettier.arrowParens": "always",
+    "prettier.printWidth": 80,
+    "prettier.semi": false,
+    "prettier.tabWidth": 2,
+    "prettier.useEditorConfig": false,
+    "prettier.requireConfig": true,
+    "prettier.singleQuote": true,
+    "prettier.bracketSpacing": true,
+    "prettier.endOfLine": "lf",
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "prettier.proseWrap": "always",
+    "prettier.quoteProps": "consistent",
+    "prettier.trailingComma": "all",
+    "zenMode.hideActivityBar": false,
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "window.density.editorTabHeight": "compact",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.matchpairs": "(:),{:},[:]",
+    "vim.smartRelativeLine": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": false,
+    "vim.leader": "<space>",
+    "vim.foldfix": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "C-h"
+            ],
+            "after": [
+                "<Left>"
+            ]
+        },
+        {
+            "before": [
+                "C-l"
+            ],
+            "after": [
+                "<Right>"
+            ]
+        },
+        {
+            "before": [
+                "C-j"
+            ],
+            "after": [
+                "<Down>"
+            ]
+        },
+        {
+            "before": [
+                "C-k"
+            ],
+            "after": [
+                "<Up>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "k"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "k"
+            ]
+        }
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        }
+    ],
+    "vim.camelCaseMotion.enable": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editor.showTabs": "single",
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.linkedEditing": true,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "’": true
+    },
+    "cSpell.customDictionaries": {},
+    "cSpell.language": "en-GB",
+    "cSpell.userWords": [
+        "Ansari",
+        "APIKEY",
+        "Arringo",
+        "Arritech",
+        "Authed",
+        "axios",
+        "BACKOFF",
+        "bgcolor",
+        "browserslist",
+        "camelcase",
+        "CEST",
+        "Chatbubbles",
+        "Checkmarks",
+        "clonedeep",
+        "Codegen",
+        "colored",
+        "commitlint",
+        "directus",
+        "dotfiles",
+        "eansarimehr",
+        "easymotion",
+        "Erfan",
+        "erfanansari",
+        "execa",
+        "extralight",
+        "Forex",
+        "fullstacksjs",
+        "Graphiql",
+        "graphqurl",
+        "Hashnode",
+        "heroicons",
+        "hlsearch",
+        "hookform",
+        "iconsax",
+        "incsearch",
+        "Informations",
+        "Instacoins",
+        "Kreter",
+        "Laravel",
+        "LHFX",
+        "nanobuffer",
+        "neofetch",
+        "Neovim",
+        "Neue",
+        "NEXTAUTH",
+        "Nextjs",
+        "noopener",
+        "noreferrer",
+        "Parens",
+        "payloadcms",
+        "pino",
+        "plotly",
+        "pocketbase",
+        "Prefetch",
+        "prettierignore",
+        "prettierrc",
+        "qgen",
+        "RECAPTCHA",
+        "ririck",
+        "Roboto",
+        "Scroller",
+        "Segoe",
+        "sendgrid",
+        "Signup",
+        "Sinc",
+        "Strapi",
+        "subproblems",
+        "Swal",
+        "sweetalert",
+        "Swiper",
+        "tailwindcss",
+        "tanstack",
+        "testid",
+        "testname",
+        "toastify",
+        "TRPC",
+        "trustpilot",
+        "typeahead",
+        "uuidv",
+        "VARS",
+        "vercel",
+        "webp",
+        "xaxis",
+        "yaxis",
+        "zeroline",
+        "zustand"
+    ],
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": true,
+        "go": true,
+        "typescript": true
+    },
+    "editor.suggestSelection": "first",
+    "workbench.sideBar.location": "left",
+    "workbench.iconTheme": "vscode-icons",
+    "window.titleSeparator": " - ",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
+    "[env]": {
+        "editor.defaultFormatter": "IronGeek.vscode-env"
+    },
+    "editor.minimap.enabled": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editor.labelFormat": "default",
+    "editor.lineNumbers": "on",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.autoRevealExclude": {
+        "**/.next": true
+    },
+    "editor.accessibilitySupport": "off",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.customLabels.patterns": {
+        "/**": "${dirname}/${filename}.${extname}"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "editor.largeFileOptimizations": false,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "cursor.cpp.disabledLanguages": [
+        "yaml",
+        "plaintext"
+    ],
+    "workbench.colorTheme": "Default Dark Modern",
+    // "workbench.colorTheme": "Default Dark Modern"
+}
