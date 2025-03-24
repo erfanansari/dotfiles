@@ -108,13 +108,7 @@
   },
 
   // Dev Tools
-  {
-      "key": "shift+cmd+i",
-      "command": "workbench.action.toggleDevTools"
-  },
-
-  //  Hide Toaster Notifications
-  {
+{
       "key": "escape",
       "command": "notifications.hideToasts",
       "when": "notificationToastsVisible"
