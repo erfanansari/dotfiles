@@ -160,6 +160,8 @@ alias pbp="pbpaste"
 alias c="clear"
 alias sf="tmux-session-switcher"
 alias cip="curl -S https://ipconfig.io/json | jq"
+alias pn=pnpm
+alias px=pnpx
 
 # Overwrite forgit plugin default aliases
 forgit_checkout_branch="gcbi"
