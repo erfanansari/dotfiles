@@ -32,7 +32,8 @@
     "**/coverage": true,
     "**/dist": true,
     "**/dist/**": true,
-    "**/jest-report-run.html": true
+    "**/jest-report-run.html": true,
+    "CHANGELOG.md": true,
   },
   // Defaults
   "editor.fontLigatures": false,
@@ -69,8 +70,7 @@
   "editor.lightbulb.enabled": "off",
   "editor.guides.indentation": false,
   "editor.hideCursorInOverviewRuler": true,
-  // "editor.fontFamily": "DankMono-Regular, FiraCode NF, JetBrains Mono, MonoLisa",
-  "editor.fontFamily": "DankMono-Italic , FiraCode NF, JetBrains Mono, MonoLisa",
+  "editor.fontFamily": "DankMono-Regular, FiraCode NF, JetBrains Mono, MonoLisa",
   "editor.fontSize": 16,
   "editor.lineHeight": 30,
   "terminal.integrated.fontSize": 14,
@@ -121,7 +121,13 @@
   "vim.incsearch": true,
   "vim.matchpairs": "(:),{:},[:]",
   // "vim.sneak": true,
-  "vim.smartRelativeLine": true,
+  // "vim.smartRelativeLine": true,
+  /*
+    :set nonumber or :set nonu - Turn off line numbers
+    :set number or :set nu - Turn on absolute line numbers
+    :set relativenumber or :set rnu - Turn on relative line numbers
+    :set norelativenumber or :set nornu - Turn off relative line numbers
+  */
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": false,
@@ -348,4 +354,5 @@
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  "workbench.colorTheme": "Ayu Mirage",
 }
