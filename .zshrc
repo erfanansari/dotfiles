@@ -113,7 +113,7 @@ zstyle ':omz:update' frequency 14
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git zsh-wakatime macos zsh-autosuggestions colored-man-pages)
 # Note that zsh-syntax-highlighting should be the last
-plugins=(git forgit zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting eza web-search)
+plugins=(git forgit zsh-wakatime zsh-autosuggestions colored-man-pages autojump you-should-use zsh-syntax-highlighting eza web-search macos)
 
 # User configuration
 
@@ -153,8 +153,8 @@ alias glogf="git log --oneline --graph --color=always | nl |
     fzf --ansi --track --no-sort --layout=reverse-list"
 alias reload="source ~/.zshrc"
 # Make help commands highlighted with bat
-alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
-alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+alias -g -- -bh='-h 2>&1 | bat --language=help --style=plain'
+alias -g -- --bhelp='--help 2>&1 | bat --language=help --style=plain'
 alias pbc="pbcopy"
 alias pbp="pbpaste"
 alias c="clear"

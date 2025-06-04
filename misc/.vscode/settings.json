@@ -336,7 +336,6 @@
     "**/.next": true
   },
   "editor.accessibilitySupport": "off",
-  "workbench.activityBar.location": "hidden",
   "workbench.editor.customLabels.patterns": {
     "/**": "${dirname}/${filename}.${extname}"
     // "/**": "${dirname(3)}/${filename}.${extname}"
