@@ -165,7 +165,6 @@ alias px=pnpx
 alias openconnect="sudo openvpn --config vpn.ovpn"
 alias renv="bat .env.local"
 alias gclc="git log -1 --pretty=format:"%s" | pbc"
-alias gbsu="git branch --set-upstream-to=origin/$(git branch --show-current) $(git branch --show-current)"
 
 # Overwrite forgit plugin default aliases
 forgit_checkout_branch="gcbi"
@@ -173,6 +172,10 @@ forgit_checkout_commit="gcoi"
 forgit_rebase=grbi
 forgit_diff="gdi"
 
+gbsu() {
+    local current_branch=$(git branch --show-current)
+    git branch --set-upstream-to=origin/$current_branch $current_branch
+}
 
 tmux-session-switcher() {
   # Get the current session (if inside tmux)
