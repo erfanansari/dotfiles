@@ -165,6 +165,7 @@ alias px=pnpx
 alias openconnect="sudo openvpn --config vpn.ovpn"
 alias renv="bat .env.local"
 alias gclc="git log -1 --pretty=format:"%s" | pbc"
+alias gbsu="git branch --set-upstream-to=origin/$(git branch --show-current) $(git branch --show-current)"
 
 # Overwrite forgit plugin default aliases
 forgit_checkout_branch="gcbi"
