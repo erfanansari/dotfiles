@@ -25,6 +25,7 @@
     "**/tsconfig.tsbuildinfo": true,
     "**/pnpm-lock.yaml": true,
     "**/.build": true,
+    "**/node_modules": true,
     "**/.gh-pages": true,
     "**/.next": true,
     "**/bower_components": true,
@@ -48,8 +49,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.addMissingImports": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
     // "source.organizeImports": "explicit",
-    "source.fixAll.eslint": "explicit"
   },
   // Hiding Stuff
   "editor.snippetSuggestions": "inline",
@@ -139,20 +141,36 @@
     //     "after": ["<Esc>"]
     // },
     {
-      "before": ["C-h"],
-      "after": ["<Left>"]
+      "before": [
+        "C-h"
+      ],
+      "after": [
+        "<Left>"
+      ]
     },
     {
-      "before": ["C-l"],
-      "after": ["<Right>"]
+      "before": [
+        "C-l"
+      ],
+      "after": [
+        "<Right>"
+      ]
     },
     {
-      "before": ["C-j"],
-      "after": ["<Down>"]
+      "before": [
+        "C-j"
+      ],
+      "after": [
+        "<Down>"
+      ]
     },
     {
-      "before": ["C-k"],
-      "after": ["<Up>"]
+      "before": [
+        "C-k"
+      ],
+      "after": [
+        "<Up>"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
@@ -167,12 +185,20 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["H"],
-      "after": ["^"]
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
     },
     // {
     //     "before": ["leader", "w"],
@@ -183,22 +209,44 @@
     //     "after": ["leader", "leader", "b"],
     // },
     {
-      "before": ["leader", "j"],
-      "after": ["leader", "leader", "j"]
+      "before": [
+        "leader",
+        "j"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "j"
+      ]
     },
     {
-      "before": ["leader", "k"],
-      "after": ["leader", "leader", "k"]
+      "before": [
+        "leader",
+        "k"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "k"
+      ]
     }
   ],
   "vim.operatorPendingModeKeyBindings": [
     {
-      "before": ["L"],
-      "after": ["$"]
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
     },
     {
-      "before": ["H"],
-      "after": ["^"]
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
     }
   ],
   "vim.camelCaseMotion.enable": true,
@@ -353,5 +401,19 @@
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "workbench.colorTheme": "Ayu Mirage",
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "less",
+    "postcss",
+    "vue"
+  ],
+  "workbench.activityBar.location": "hidden",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }

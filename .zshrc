@@ -22,21 +22,21 @@ setopt HIST_IGNORE_DUPS
 # Write the history file in the ":start:elapsed;command" format.
 setopt EXTENDED_HISTORY
 # Expire duplicate entries first when trimming history.
-setopt HIST_EXPIRE_DUPS_FIRST    
+setopt HIST_EXPIRE_DUPS_FIRST
 # Do not display a line previously found.
-setopt HIST_FIND_NO_DUPS         
+setopt HIST_FIND_NO_DUPS
 # Don't record an entry starting with a space.
-setopt HIST_IGNORE_SPACE         
+setopt HIST_IGNORE_SPACE
 # Don't write duplicate entries in the history file.
-setopt HIST_SAVE_NO_DUPS         
+setopt HIST_SAVE_NO_DUPS
 # Remove superfluous blanks before recording entry.
-setopt HIST_REDUCE_BLANKS        
+setopt HIST_REDUCE_BLANKS
 # Don't execute immediately upon history expansion.
-setopt HIST_VERIFY               
+setopt HIST_VERIFY
 # Beep when accessing nonexistent history.
-setopt HIST_BEEP                 
+setopt HIST_BEEP
 # Treat the '!' character specially during expansion.
-setopt BANG_HIST                 
+setopt BANG_HIST
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -162,6 +162,9 @@ alias sf="tmux-session-switcher"
 alias cip="curl -S https://ipconfig.io/json | jq"
 alias pn=pnpm
 alias px=pnpx
+alias openconnect="sudo openvpn --config vpn.ovpn"
+alias renv="bat .env.local"
+alias gclc="git log -1 --pretty=format:"%s" | pbc"
 
 # Overwrite forgit plugin default aliases
 forgit_checkout_branch="gcbi"
