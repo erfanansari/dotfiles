@@ -18,7 +18,7 @@
   "editor.suggest.localityBonus": true,
   "editor.renderWhitespace": "none",
   "files.exclude": {
-    // "node_modules": true,
+    "node_modules": true,
     // "package-lock.json": true
   },
   "search.exclude": {
