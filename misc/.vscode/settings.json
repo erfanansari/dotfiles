@@ -412,8 +412,8 @@
     "postcss",
     "vue"
   ],
-  "workbench.activityBar.location": "hidden",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "workbench.activityBar.location": "hidden",
 }
