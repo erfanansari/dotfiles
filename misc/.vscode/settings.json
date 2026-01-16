@@ -66,7 +66,7 @@
   },
   "editor.occurrencesHighlight": "off",
   "workbench.editor.enablePreview": false,
-  "editor.hover.enabled": true,
+  "editor.hover.enabled": "on",
   "editor.matchBrackets": "never",
   "workbench.tips.enabled": false,
   "editor.lightbulb.enabled": "off",
@@ -416,4 +416,6 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "workbench.activityBar.location": "hidden",
+  "claudeCode.preferredLocation": "panel",
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
 }
