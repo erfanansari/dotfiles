@@ -42,3 +42,7 @@
   autoSetupRemote = true
 [includeIf "gitdir:~/dev/pragma/"]
   path = .gitconfig-pragma
+[credential]
+	helper = osxkeychain
+[url "git@github.com:"]
+	insteadOf = https://github.com/

@@ -18,7 +18,7 @@
   "editor.suggest.localityBonus": true,
   "editor.renderWhitespace": "none",
   "files.exclude": {
-    "node_modules": true,
+    // "node_modules": true,
     // "package-lock.json": true
   },
   "search.exclude": {
@@ -418,4 +418,5 @@
   "workbench.activityBar.location": "hidden",
   "claudeCode.preferredLocation": "panel",
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "typescript.experimental.useTsgo": true,
 }

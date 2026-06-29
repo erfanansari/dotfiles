@@ -165,6 +165,8 @@ alias px=pnpx
 alias openconnect="sudo openvpn --config vpn.ovpn"
 alias renv="bat .env.local"
 alias gclc="git log -1 --pretty=format:"%s" | pbc"
+alias gcan="git commit --amend --no-edit"
+alias whenwasi="stat -f "%SB" /Users/$(whoami)"
 
 # Overwrite forgit plugin default aliases
 forgit_checkout_branch="gcbi"
