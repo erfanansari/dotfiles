@@ -311,6 +311,7 @@ fstash() {
 
 
 export GOPATH=$HOME/go
+export CLAUDE_CODE_OAUTH_TOKEN=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
 export GOBIN=$GOPATH/bin
 # export PATH=$PATH:$GOBIN
 export PATH=$PATH:/usr/local/mongodb/bin
@@ -349,3 +350,6 @@ source <(fzf --zsh)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"

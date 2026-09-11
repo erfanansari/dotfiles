@@ -419,4 +419,6 @@
   "claudeCode.preferredLocation": "panel",
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
   "typescript.experimental.useTsgo": true,
+  "js/ts.experimental.useTsgo": false,
+  "chat.disableAIFeatures": true
 }

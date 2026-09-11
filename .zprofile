@@ -6,3 +6,6 @@ export PATH="$PATH:/Users/erfan/Library/Application Support/JetBrains/Toolbox/sc
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"
