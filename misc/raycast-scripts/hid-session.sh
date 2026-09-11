@@ -2,22 +2,22 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title SS
+# @raycast.title HID Session
 # @raycast.mode compact
 
 # Optional parameters:
-# @raycast.icon 📜
+# @raycast.icon ⚙️
 
 # Documentation:
-# @raycast.description Toggle mouse shaker to simulate natural mouse activity
+# @raycast.description Toggle the local HID session agent
 # @raycast.author erfan
 
-PID_FILE="/tmp/mouse_shaker.pid"
-LOG_FILE="/tmp/mouse_shaker.log"
+PID_FILE="/tmp/hid_session.pid"
+LOG_FILE="/tmp/hid_session.log"
 
 # Check if cliclick is installed
 if ! command -v cliclick &> /dev/null; then
-    echo "❌ cliclick is required. Install with: brew install cliclick"
+    echo "missing dependency: cliclick (brew install cliclick)"
     exit 1
 fi
 
@@ -48,9 +48,9 @@ do_scroll() {
     fi
 }
 
-# Main shaker function
-shake_mouse() {
-    echo "Mouse shaker started at $(date)" > "$LOG_FILE"
+# Main session loop
+run_session() {
+    echo "session start $(date)" > "$LOG_FILE"
 
     while true; do
         # Very short intervals between actions (1-3 seconds) to simulate active work
@@ -59,7 +59,7 @@ shake_mouse() {
         # Occasionally add medium idle periods (3% chance)
         if [ $(random_range 1 100) -le 3 ]; then
             sleep_time=$(random_range 5 12)
-            echo "Idle: ${sleep_time}s at $(date)" >> "$LOG_FILE"
+            echo "evt idle ${sleep_time}s $(date)" >> "$LOG_FILE"
         fi
 
         sleep $sleep_time
@@ -85,19 +85,19 @@ shake_mouse() {
                 cliclick -e $easing "m:+${offset_x},+${offset_y}"
                 sleep 0.$(random_range 2 5)
                 cliclick "c:."
-                echo "Move+Click at $(date)" >> "$LOG_FILE"
+                echo "evt m1 $(date)" >> "$LOG_FILE"
                 ;;
             4[1-9]|5[0-2])
                 # Scroll down (12%)
                 scroll_amount=$(random_range 3 8)
                 do_scroll $scroll_amount
-                echo "Scroll down ${scroll_amount} at $(date)" >> "$LOG_FILE"
+                echo "evt s1 ${scroll_amount} $(date)" >> "$LOG_FILE"
                 ;;
             5[3-9]|6[0-4])
                 # Scroll up (12%)
                 scroll_amount=$(random_range -8 -3)
                 do_scroll $scroll_amount
-                echo "Scroll up ${scroll_amount} at $(date)" >> "$LOG_FILE"
+                echo "evt s2 ${scroll_amount} $(date)" >> "$LOG_FILE"
                 ;;
             6[5-9]|7[0-4])
                 # Double click pattern (10% - opening files/folders)
@@ -110,7 +110,7 @@ shake_mouse() {
                 cliclick "c:."
                 sleep 0.$(random_range 1 2)
                 cliclick "c:."
-                echo "Double-Click at $(date)" >> "$LOG_FILE"
+                echo "evt m2 $(date)" >> "$LOG_FILE"
                 ;;
             7[5-9]|8[0-2])
                 # Dragging pattern (8% - selecting text/moving items)
@@ -126,7 +126,7 @@ shake_mouse() {
                 sleep 0.$(random_range 5 15)
                 cliclick -e $easing "m:+${offset_x2},+${offset_y2}"
                 cliclick "du:."
-                echo "Drag at $(date)" >> "$LOG_FILE"
+                echo "evt m3 $(date)" >> "$LOG_FILE"
                 ;;
             8[3-9]|90)
                 # Large movement (8% - moving between windows/areas)
@@ -135,7 +135,7 @@ shake_mouse() {
                 easing=$(random_range 8 18)
 
                 cliclick -e $easing "m:+${offset_x},+${offset_y}"
-                echo "Large move at $(date)" >> "$LOG_FILE"
+                echo "evt m4 $(date)" >> "$LOG_FILE"
                 ;;
             9[1-4])
                 # Scroll + click (4%)
@@ -144,7 +144,7 @@ shake_mouse() {
                 do_scroll $scroll_amount
                 sleep 0.$(random_range 5 10)
                 cliclick "c:."
-                echo "Scroll+Click at $(date)" >> "$LOG_FILE"
+                echo "evt s3 $(date)" >> "$LOG_FILE"
                 ;;
             9[5-8])
                 # Typing pattern - click then small movements (4% - simulating typing)
@@ -156,12 +156,12 @@ shake_mouse() {
                     cliclick "m:+${offset_x},+${offset_y}"
                     sleep 0.$(random_range 1 3)
                 done
-                echo "Typing pattern at $(date)" >> "$LOG_FILE"
+                echo "evt k1 $(date)" >> "$LOG_FILE"
                 ;;
             *)
                 # Just click (2% - random interactions)
                 cliclick "c:."
-                echo "Click at $(date)" >> "$LOG_FILE"
+                echo "evt m0 $(date)" >> "$LOG_FILE"
                 ;;
         esac
 
@@ -175,12 +175,12 @@ shake_mouse() {
                 cliclick -e $(random_range 5 12) "m:+${offset_x},+${offset_y}"
                 sleep 0.$(random_range 2 6)
                 cliclick "c:."
-                echo "Extra move+click at $(date)" >> "$LOG_FILE"
+                echo "evt m5 $(date)" >> "$LOG_FILE"
             else
                 scroll_amt=$(random_range -7 7)
                 [ $scroll_amt -eq 0 ] && scroll_amt=4
                 do_scroll $scroll_amt
-                echo "Extra scroll at $(date)" >> "$LOG_FILE"
+                echo "evt s4 $(date)" >> "$LOG_FILE"
             fi
         fi
     done
@@ -193,7 +193,7 @@ if [ -f "$PID_FILE" ]; then
         # Already running, stop it
         kill $PID
         rm "$PID_FILE"
-        echo "🛑 Shaker stopped"
+        echo "⏹ Session ended"
         exit 0
     else
         # Stale PID file
@@ -201,9 +201,9 @@ if [ -f "$PID_FILE" ]; then
     fi
 fi
 
-# Start shaker in background
-shake_mouse &
+# Start session agent in background
+run_session &
 echo $! > "$PID_FILE"
 
-echo "✅ Shaker started (PID: $!)"
-echo "Run again to stop"
+echo "⚙️ Session active (PID: $!)"
+echo "Run again to end"
