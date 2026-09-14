@@ -1,22 +1,17 @@
 ---
 name: commit-message
-description: Use when writing the first commit on a branch named like feat/fix/hotfix/test followed by a ticket number (e.g. crm-3434), to decide the commit scope and format
+description: Use whenever writing a git commit message, to decide the format, scope, and keep it clean
 ---
 
 # Commit Message
 
 ## Overview
 
-Commit message format for ticket-based branches.
-
-## When to Use
-
-- The current branch follows the pattern `type/TICKET-1234-...` (`feat`, `fix`, `hotfix`, `test`, etc.)
-- Writing the first commit on that branch
+Always applies when writing a commit message — keep it short and clean. On top of that, the first commit of a ticket-based branch also needs a scope.
 
 ## Format
 
-- If the branch name includes a ticket number, use it as the scope: `feat(crm-3434): add contact filter`
-- If there's no ticket number, omit the scope entirely: `feat: add contact filter`
-- Keep the message short
-- Never include any Claude/AI trace (no `Co-Authored-By: Claude`, no tool signatures)
+- Always: keep the message minimal and not too long
+- Always: no clutter — never include any Claude/AI trace (no `Co-Authored-By: Claude`, no tool signatures)
+- If the current branch follows the pattern `type/TICKET-1234-...` (`feat`, `fix`, `hotfix`, `test`, etc.) and this is the first commit on that branch, use the ticket number as the scope: `feat(crm-3434): add contact filter`
+- Otherwise, omit the scope entirely: `feat: add contact filter`
