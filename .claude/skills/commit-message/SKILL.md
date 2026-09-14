@@ -15,3 +15,4 @@ Always applies when writing a commit message — keep it short and clean. On top
 - Always: no clutter — never include any Claude/AI trace (no `Co-Authored-By: Claude`, no tool signatures)
 - If the current branch follows the pattern `type/TICKET-1234-...` (`feat`, `fix`, `hotfix`, `test`, etc.) and this is the first commit on that branch, use the ticket number as the scope: `feat(crm-3434): add contact filter`
 - Otherwise, omit the scope entirely: `feat: add contact filter`
+- Do not add description for the commit
