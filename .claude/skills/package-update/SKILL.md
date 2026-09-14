@@ -1,12 +1,25 @@
-Yes, but go in steps.
+---
+name: package-update
+description: Use when updating project dependencies (npm/pnpm packages), to decide ordering, grouping, and verification steps
+---
 
-Dev dependencies non breaking patch
-Dev dependencies non breaking minor
-Dev dependencies breaking major
-Dependencies non breaking patch
-Dependencies non breaking minor
-Dependencies breaking major
-And you can use different commits for anything that are related, like eslint related packages, etc.
+# Package Update
 
-Also remove overrides and use pn clean and recheck if there are any overrides left.
-For each iteration there should be another check to see changes in terminal via AI and see if there is breaking change or action needed or not.
+## Overview
+
+Go in steps, not all at once — update dependencies in order of increasing risk, verifying between each step.
+
+## Steps (in order)
+
+1. Dev dependencies — non-breaking patch
+2. Dev dependencies — non-breaking minor
+3. Dev dependencies — breaking major
+4. Dependencies — non-breaking patch
+5. Dependencies — non-breaking minor
+6. Dependencies — breaking major
+
+## Guidelines
+
+- Split unrelated packages into separate commits; group related ones together (e.g. all eslint packages in one commit)
+- Remove `overrides`, run `pn clean`, and recheck that no overrides remain
+- After each step, review the terminal output/diff for breaking changes or required follow-up actions before moving to the next step

@@ -1,5 +1,18 @@
-MR review in process: Run the code locally and test the functionality before even looking at the code. If it doesn’t work then no point in reviewing.
-Look over the new code line by line to understand what is being introduced.
-Ask clarifying questions to make sure you understand anything that isn’t obvious.
-Meet up to go over large reviews and have the developer explain the code.
-Always do reviews in the morning before starting on your own work so you’re not context switching.
+---
+name: review-mr
+description: Use when reviewing a merge request or pull request, to decide the process and ordering of review steps
+---
+
+# Review MR
+
+## Overview
+
+Process for reviewing a merge request end to end.
+
+## Steps
+
+1. Run the code locally and test the functionality first — if it doesn't work, stop; there's no point reviewing further
+2. Read the new code line by line to understand what's being introduced
+3. Ask clarifying questions about anything that isn't obvious
+4. For large reviews, meet with the author and have them walk through the code
+5. Do reviews in the morning, before starting your own work, to avoid context switching
