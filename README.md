@@ -30,3 +30,4 @@
 - `ln -s -f ~/dev/dotfiles/.config/tmux/plugins/tmux/custom/spotify-info ~/.config/tmux/plugins/tmux/custom/spotify-info`
 - `ln -s -f ~/dev/dotfiles/.config/tmux/plugins/tmux/custom/spotify.sh ~/.config/tmux/plugins/tmux/custom/spotify.sh`
 - `ln -s -f ~/dev/dotfiles/.wezterm.lua ~/.wezterm.lua`
+- `ln -s -f ~/dev/dotfiles/.claude/skills ~/.claude/skills`

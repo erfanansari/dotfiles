@@ -1,0 +1,1 @@
+if we are on a branch like feat/fix/hotfix/test what ever with a followed ticket number like crm-3434, the first commit of that branch should inlcude that ticket numbeer in scope, like this feat(crm-xxxx): something added, if not no scope should be there, also no claude trace should be in the commit message, also we should keep the commit message not to long
