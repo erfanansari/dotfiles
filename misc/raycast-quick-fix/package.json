@@ -1,0 +1,63 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "quick-fix",
+  "title": "Quick Fix",
+  "description": "Fix spelling, grammar, and punctuation in the selected text using Groq, in place.",
+  "icon": "icon.png",
+  "author": "erfan",
+  "categories": [
+    "Productivity",
+    "System"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "quick-fix",
+      "title": "Quick Fix",
+      "subtitle": "Fix grammar & spelling",
+      "description": "Fixes spelling, grammar and punctuation of the selected text in place, preserving tone, language, mentions, links and formatting.",
+      "mode": "no-view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "groqApiKey",
+      "title": "Groq API Key",
+      "description": "Your Groq API key (console.groq.com/keys). Never leaves your machine except to call Groq's API.",
+      "type": "password",
+      "required": true
+    },
+    {
+      "name": "model",
+      "title": "Model",
+      "description": "Groq model used to fix text",
+      "type": "dropdown",
+      "required": false,
+      "default": "openai/gpt-oss-20b",
+      "data": [
+        { "title": "GPT-OSS 20B (fastest, lowest token usage)", "value": "openai/gpt-oss-20b" },
+        { "title": "GPT-OSS 120B (best quality)", "value": "openai/gpt-oss-120b" }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.86.0",
+    "@raycast/utils": "^1.17.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "22",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
